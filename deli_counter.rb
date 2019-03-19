@@ -1,11 +1,15 @@
 katz_deli = [] 
 
-def take_a_number(array, name)
-  array.push(name)
-  position = array.index(name)
-  puts "Welcome, #{name}. You are number #{array.index(name)+1} in line."
-  return name, position 
-end 
+def take_a_number(array)
+  i = array.length
+      if array.length == 0
+      puts "Welcome, you are number 1 in line."
+    else
+      puts "Welcome, you are number #{array.index +1} in line."
+    end
+  return i
+end
+
 
 take_a_number(katz_deli, "Ada")
 take_a_number(katz_deli, "Grace")
